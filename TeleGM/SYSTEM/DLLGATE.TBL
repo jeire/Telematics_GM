@@ -1,0 +1,39 @@
+#BASIC
+CONNECT							         //CONNECT//
+DISCONNECT                               //DISCONNECT//
+#GEN9.7
+DLL_9.7_PORT_OPEN                        //GEN9.7:PORT_OPEN <DATA>,NONE//
+DLL_9.7_PORT_CLOSE                       //GEN9.7:PORT_CLOSE NONE,NONE//
+DLL_9.7_READ_IMEI                        //GEN9.7:READ_IMEI NONE,NONE//
+DLL_9.7_WRITE_IMEI                       //GEN9.7:WRITE_IMEI <DATA>,NONE//
+DLL_9.7_CHECKSUM_IMEI                    //GEN9.7:CHECKSUM_IMEI <DATA>,NONE//
+DLL_9.7_READ_MSISDN                      //GEN9.7:READ_MSISDN NONE,NONE//
+DLL_9.7_READ_ICCID                       //GEN9.7:READ_ICCID NONE,NONE//
+DLL_9.7_READ_IMSI                        //GEN9.7:READ_IMSI NONE,NONE//
+#GEN9.4
+DLL_9.4_PORT_OPEN                        //GEN9.4:PORT_OPEN <DATA>,NONE//
+DLL_9.4_PORT_CLOSE                       //GEN9.4:PORT_CLOSE NONE,NONE//
+DLL_9.4_READ_IMEI                        //GEN9.4:READ_IMEI NONE,NONE//
+DLL_9.4_WRITE_IMEI                       //GEN9.4:WRITE_IMEI <DATA>,NONE//
+DLL_9.4_CHECKSUM_IMEI                    //GEN9.4:CHECKSUM_IMEI <DATA>,NONE//
+DLL_9.4_READ_MSISDN                      //GEN9.4:READ_MSISDN NONE,NONE//
+DLL_9.4_READ_ICCID                       //GEN9.4:READ_ICCID NONE,NONE//
+DLL_9.4_READ_IMSI                        //GEN9.4:READ_IMSI NONE,NONE//
+DLL_9.4_NV_RESTORE                       //GEN9.4:NV_RESTORE NONE,NONE//
+#ESN
+DLL_ESN_PORT_OPEN                        //ESN:PORT_OPEN <DATA>,NONE//
+DLL_ESN_PORT_CLOSE                       //ESN:PORT_CLOSE NONE,NONE//
+DLL_ESN_ISPHONEOK                        //ESN:nIsPhoneOK_ESN NONE,NONE//
+DLL_ESN_SET_MODEL                        //ESN:nSetModel_ESN <DATA>,NONE//
+DLL_ESN_WRITE_MEID                       //ESN:nWriteMEID_ESN <DATA>,NONE//
+DLL_ESN_READ_MEID                        //ESN:nReadMEID_ESN NONE,NONE//
+DLL_ESN_MIN_WRITE_NAM                    //ESN:nMIN_WriteNAM_ESN <DATA>,NONE//
+DLL_ESN_READ_MIN                         //ESN:nReadMIN_ESN NONE,NONE//
+DLL_ESN_WRITE_DIRNUMBER                  //ESN:nWriteDirNumber_ESN <DATA>,NONE//
+DLL_ESN_READ_DIRNUMBER                   //ESN:nReadDirNumber_ESN NONE,NONE//
+DLL_ESN_WRITE_AKEY_NEW1                  //ESN:nWriteAkeynew1_ESN <DATA>,NONE//
+DLL_ESN_READ_AKEY                        //ESN:nReadAkey1Akey_ESN NONE,NONE//
+DLL_ESN_READ_AKEY_CHECKSUM               //ESN:nReadAkey1Checksum_ESN NONE,NONE//
+DLL_ESN_MAKE_DMU_BYPASS_KEY              //ESN:nmakeDMUBypassKey_ESN <DATA>,NONE//
+DLL_ESN_WRITE_DMU_BYPASS_KEY             //ESN:nWriteDMUBypassKey_ESN <DATA>,NONE//
+DLL_ESN_READ_DMU_BYPASS_KEY              //ESN:nReadDMUBypassKey_ESN NONE,NONE//

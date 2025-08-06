@@ -1,0 +1,72 @@
+#MCM DCT TABLE
+0  //90 1D //02 //Internal hardware Failure - RMC transmission (short to ground)
+1  //90 1D //31 //ECU Hardware Performance - General Checksum Failure
+2  //90 1D //32 //ECU Hardware Performance - General Memory Failure
+3  //90 1D //37 //ECU Hardware Performance - Watchdog/Safety AP failure
+4  //90 1D //39 //Internal Communication Failure - Loss of communication with GPS
+5  //92 6F //01 //Microphone circuit #4 (short to battery)
+6  //92 6F //02 //Microphone circuit #4 (short to ground)
+7  //92 6F //04 //Microphone circuit #4 (open circuit)
+8  //92 77 //01 //Microphone circuit #1 (short to battery)
+9  //92 77 //02 //Microphone circuit #1 (short to ground)
+10 //92 77 //04 //Microphone circuit #1 (open circuit)
+11 //92 7C //01 //Microphone circuit #2 (short to battery)
+12 //92 7C //02 //Microphone circuit #2 (short to ground)
+13 //92 7C //04 //Microphone circuit #2 (open circuit)
+14 //92 7D //01 //Microphone circuit #3 (short to battery)
+15 //92 7D //02 //Microphone circuit #3 (short to ground)
+16 //92 7D //04 //Microphone circuit #3 (open circuit)
+17 //93 25 //03 //Primary Power Source under Voltage (Device Power 1 circuit)
+18 //93 25 //07 //Primary Power Source over Voltage (Device Power 1 circuit)
+19 //93 30 //03 //Secondary Power Source underVoltage (Device Power 2 circuit)
+20 //93 30 //07 //Secondary Power Source over Voltage (Device Power 2 circuit)
+21 //A4 5D //02 //Modem #2 Secondary Antenna (short to ground)
+22 //A4 5D //04 //Modem #2 Secondary Antenna (open circuit)
+23 //A4 5E //02 //Modem #3 Primary Antenna (short to ground)
+24 //A4 5E //04 //Modem #3 Primary Antenna (open circuit)
+25 //A4 5F //02 //Modem #3 Secondary Antenna (short to ground)
+26 //A4 5F //04 //Modem #3 Secondary Antenna (open circuit)
+27 //A4 62 //02 //GPS Antenna Malfunction Low (Short to Ground),
+28 //A4 62 //04 //GPS Antenna Malfunction Low (Open circuit)
+29 //A4 70 //02 //Modem #1 Primary Antenna (short to ground)
+30 //A4 70 //04 //Modem #1 Primary Antenna (open circuit)
+31 //A4 76 //59 //Cellular Phone Select Service Switch 1 - (Stuck)
+32 //A4 7B //02 //Modem #1 Secondary Antenna (short to ground)
+33 //A4 7B //04 //Modem #1 Secondary Antenna (open circuit)
+34 //A4 7C //02 //Modem #2 Primary Antenna (short to ground)
+35 //A4 7C //04 //Modem #2 Primary Antenna (open circuit)
+36 //A4 7D //59 //Cellular Phone Select Service Switch 2 - (Stuck)
+37 //A4 85 //02 //Wi-Fi Primary Antenna (short to ground)
+38 //A4 85 //04 //Wi-Fi Primary Antenna (open circuit)
+39 //A4 8A //02 //Wi-Fi Secondary Antenna (short to ground)
+40 //A4 8A //04 //Wi-Fi Secondary Antenna (open circuit)
+41 //A4 AA //02 //Camera #1 (short to ground)
+42 //A4 AA //04 //Camera #1 (open circuit)
+43 //A4 AB //02 //Camera #2 (short to ground)
+44 //A4 AB //04 //Camera #2 (open circuit)
+45 //A4 AC //02 //Camera #3 (short to ground)
+46 //A4 AC //04 //Camera #3 (open circuit)
+47 //A4 AD //02 //Camera #4 (short to ground)
+48 //A4 AD //04 //Camera #4 (open circuit)
+49 //A8 4A //01 //Right Front User Tablet #1 Power Circuit (short to Battery)
+50 //A8 4A //02 //Right Front User Tablet #1 Power Circuit (Short to ground) 
+51 //A8 4A //04 //Right Front User Tablet #1 Power Circuit (open circuit)
+52 //A8 4B //01 //Left Rear User Tablet #2 Power Circuit (short to Battery)
+53 //A8 4B //02 //Left Rear User Tablet #2 Power Circuit (Short to ground) 
+54 //A8 4B //04 //Left Rear User Tablet #2 Power Circuit (open circuit)
+55 //A8 4C //01 //Right Rear User Tablet #3 Power Circuit (short to Battery)
+56 //A8 4C //02 //Right Rear User Tablet #3 Power Circuit (Short to ground) 
+57 //A8 4C //04 //Right Rear User Tablet #3 Power Circuit (open circuit)
+58 //C0 73 //00 //Control Module Communication Bus Off on HSGMlan
+59 //C0 78 //00 //Control Module Communication Bus Off on LSGMlan
+60 //C1 02 //00 //Loss of communication with Right Front User Tablet
+61 //C1 03 //00 //Loss of communication with Left Rear User Tablet
+62 //C1 04 //00 //Loss of communication with Right Rear User Tablet
+63 //C1 40 //00 //Lost Communication with Body Control Module
+64 //C1 46 //00 //Loss of communication to CGM
+65 //D8 F2 //00 //Loss of communication with ADIM#1
+66 //D8 F3 //00 //Loss of communication with ADIM#2
+67 //D8 FD //00 //Loss of communication with ADSC #1
+68 //D8 FE //00 //Loss of communication with ADSC #2
+69 //D9 04 //00 //Loss of communication with Ethernet Switch #1
+70 //D9 05 //00 //Loss of communication with Ethernet Switch #2

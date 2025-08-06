@@ -1,0 +1,15 @@
+#BASIC
+IDN                           //*IDN?////0
+RESET                         //*RST////0
+SET_VOLT                      //VOLT <DATA>////0
+GET_VOLT                      //VOLT?////0
+SET_CURRENT                   //CURR <DATA>////0
+GET_CURRENT                   //CURR?////0
+POWER_ON                      //OUTP ON////0
+POWER_OFF                     //OUTP OFF////0
+GET_POWER_STATUS              //OUTP?////0
+MEAS_VOLT                     //MEAS:VOLT?////0
+MEAS_CURRENT                  //MEAS:CURR?////0
+SET_CHANNEL1                  //INST OUT1////0
+SET_CHANNEL2                  //INST OUT2////0
+GET_CHANNEL                   //INST?////0

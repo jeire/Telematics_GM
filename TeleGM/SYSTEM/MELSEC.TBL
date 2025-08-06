@@ -1,0 +1,5 @@
+#ETHERNET
+CONNECT                    //CONNECT//
+DISCONNECT                 //DISCONNECT//
+READ_MEMORY_WORD           //READ_MEMORY_WORD//
+READ_MEMORY_BYTE           //READ_MEMORY_BYTE//

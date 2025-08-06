@@ -1,0 +1,321 @@
+#VCP_BENCH_BASIC
+VERSION                           //24 30 30 56 <CXA> 0D//
+RESET                             //24 30 30 5A <CXA> 0D//
+UART_ENABLE                       //24 30 30 57 46 31 <CXA> 0D//
+UART_DISABLE                      //24 30 30 57 46 30 <CXA> 0D//
+READ_INPUT                        //24 30 30 52 <CXA> 0D//
+READ_OPEN_SHORT                   //24 30 30 4F <CXA> 0D//
+READ_VOLTAGE_LED                  //24 30 30 50 31 <CXA> 0D//
+READ_CURRENT_PRIMARY              //24 30 30 50 32 <CXA> 0D//
+READ_CURRENT_BACKUP               //24 30 30 50 33 <CXA> 0D//
+READ_CURRENT_PRIMARY_mA           //24 30 30 50 32 <CXA> 0D//
+READ_CURRENT_BACKUP_mA            //24 30 30 50 33 <CXA> 0D//
+READ_VOLTAGE_LED_RED              //24 30 30 50 34 <CXA> 0D//
+READ_VOLTAGE_LED_GREEN            //24 30 30 50 35 <CXA> 0D//
+READ_VOLTAGE_KEYPAD_REF10V        //24 30 30 50 36 <CXA> 0D//
+READ_VOLTAGE_KEYPAD_SIGNAL        //24 30 30 50 37 <CXA> 0D//
+READ_BCMRADIO_VOLTAGE_CHECK       //24 30 30 41 33 <CXA> 0D//
+READ_VOLTAGE_BCM_TYPE             //24 30 30 50 38 <CXA> 0D//
+READ_VOLTAGE_ADC_SPARE            //24 30 30 50 39 <CXA> 0D//
+READ_VOLTAGE_OPEN_SHORT           //24 30 30 50 41 <CXA> 0D//
+GOLDEN_NODE_ENABLE                //24 30 30 43 33 31 <CXA> 0D//
+GOLDEN_NODE_DISABLE               //24 30 30 43 33 30 <CXA> 0D//
+ETHERNET_POWER1_ON                //24 30 30 43 36 31 <CXA> 0D//
+ETHERNET_POWER1_OFF               //24 30 30 43 36 30 <CXA> 0D//
+ETHERNET_POWER2_ON                //24 30 30 43 37 31 <CXA> 0D//
+ETHERNET_POWER2_OFF               //24 30 30 43 37 30 <CXA> 0D//
+#VCP_BENCH_RELAY_CONTROL
+RELAY_ON_KEY                      //24 30 30 57 31 31 <CXA> 0D//
+RELAY_ON_PRIMARY                  //24 30 30 57 32 31 <CXA> 0D//
+RELAY_ON_BACKUP                   //24 30 30 57 33 31 <CXA> 0D//
+RELAY_ON_KEY_EXT                  //24 30 30 57 31 34 <CXA> 0D//
+RELAY_ON_PRIMARY_EXT              //24 30 30 57 32 34 <CXA> 0D//
+RELAY_ON_BACKUP_EXT               //24 30 30 57 33 34 <CXA> 0D//
+RELAY_ON_DOOR(L)                  //24 30 30 57 34 31 <CXA> 0D//
+RELAY_ON_MIC+SEL                  //24 30 30 57 35 31 <CXA> 0D//
+RELAY_ON_MIC-SEL                  //24 30 30 57 39 31 <CXA> 0D//
+RELAY_ON_BCM_VBAT                 //24 30 30 57 44 31 <CXA> 0D//
+RELAY_ON_BCM_ACC                  //24 30 30 57 45 31 <CXA> 0D//
+RELAY_OFF_KEY                     //24 30 30 57 31 30 <CXA> 0D//
+RELAY_OFF_PRIMARY                 //24 30 30 57 32 30 <CXA> 0D//
+RELAY_OFF_BACKUP                  //24 30 30 57 33 30 <CXA> 0D//
+RELAY_OFF_KEY_EXT                 //24 30 30 57 31 33 <CXA> 0D//
+RELAY_OFF_PRIMARY_EXT             //24 30 30 57 32 33 <CXA> 0D//
+RELAY_OFF_BACKUP_EXT              //24 30 30 57 33 33 <CXA> 0D//
+RELAY_OFF_DOOR(L)                 //24 30 30 57 34 30 <CXA> 0D//
+RELAY_OFF_AUDIO+SEL               //24 30 30 57 35 30 <CXA> 0D//
+RELAY_OFF_AUDIO-SEL               //24 30 30 57 39 30 <CXA> 0D//
+RELAY_OFF_ALL                     //24 30 30 57 30 30 <CXA> 0D//
+RELAY_OFF_BCM_VBAT                //24 30 30 57 44 30 <CXA> 0D//
+RELAY_OFF_BCM_ACC                 //24 30 30 57 45 30 <CXA> 0D//
+RELAY_OPEN_LSGMLAN                //24 30 30 57 36 31 <CXA> 0D//
+RELAY_OPEN_HSCOMM(CLASS2)         //24 30 30 57 37 31 <CXA> 0D//
+RELAY_CLOSE_LSGMLAN               //24 30 30 57 36 30 <CXA> 0D//
+RELAY_CLOSE_HSCOMM(CLASS2)        //24 30 30 57 37 30 <CXA> 0D//
+RELAY_ENABLE_BUB                  //24 30 30 57 38 31 <CXA> 0D//
+RELAY_DISABLE_BUB                 //24 30 30 57 38 30 <CXA> 0D//
+RELAY_TESTPORT_HI                 //24 30 30 57 41 31 <CXA> 0D//
+RELAY_TESTPORT_LOW                //24 30 30 57 41 30 <CXA> 0D//
+RELAY_UART2_1.8V                  //24 30 30 57 49 31 <CXA> 0D//
+RELAY_UART2_3.3V                  //24 30 30 57 49 30 <CXA> 0D//
+RELAY_NAD_CH1_1.8V                //24 30 30 57 4A 31 <CXA> 0D//
+RELAY_NAD_CH1_3.3V                //24 30 30 57 4A 30 <CXA> 0D//
+#VCP_BENCH_BUTTON_DTC_CONTROL
+BTN_ON_EMERGENCY                  //24 30 30 42 31 31 <CXA> 0D//
+BTN_ON_ONSTAR                     //24 30 30 42 32 31 <CXA> 0D//
+BTN_ON_DOT                        //24 30 30 42 33 31 <CXA> 0D//
+BTN_OFF_EMERGENCY                 //24 30 30 42 31 30 <CXA> 0D//
+BTN_OFF_ONSTAR                    //24 30 30 42 32 30 <CXA> 0D//
+BTN_OFF_DOT                       //24 30 30 42 33 30 <CXA> 0D//
+BTN_CLICK_EMERGENCY               //24 30 30 42 31 32 <CXA> 0D//
+BTN_CLICK_ONSTAR                  //24 30 30 42 32 32 <CXA> 0D//
+BTN_CLICK_DOT                     //24 30 30 42 33 32 <CXA> 0D//
+DTC_OPEN_RF                       //24 30 30 42 34 31 <CXA> 0D//
+DTC_OPEN_BT                       //24 30 30 42 35 31 <CXA> 0D//
+DTC_OPEN_GPS                      //24 30 30 42 36 31 <CXA> 0D//
+DTC_OPEN_MIC                      //24 30 30 42 37 31 <CXA> 0D//
+DTC_CLOSE_RF                      //24 30 30 42 34 30 <CXA> 0D//
+DTC_CLOSE_BT                      //24 30 30 42 35 30 <CXA> 0D//
+DTC_CLOSE_GPS                     //24 30 30 42 36 30 <CXA> 0D//
+DTC_CLOSE_MIC                     //24 30 30 42 37 30 <CXA> 0D//
+DTC_GPS_AUTOMODE_ENABLE           //24 30 30 42 45 31 <CXA> 0D//
+DTC_GPS_AUTOMODE_DISABLE          //24 30 30 42 45 30 <CXA> 0D//
+DTC_GPS_125_Ohm                   //24 30 30 42 44 31 <CXA> 0D//
+DTC_GPS_250_Ohm                   //24 30 30 42 44 30 <CXA> 0D//
+#VCP_BENCH_OUTPUT_LED_CONTROL
+RELAY_ON_OK                       //24 30 30 42 41 31 <CXA> 0D//
+RELAY_ON_NG                       //24 30 30 42 42 31 <CXA> 0D//
+RELAY_ON_CHECK                    //24 30 30 42 4C 31 <CXA> 0D//
+RELAY_ON_READY                    //24 30 30 42 4D 31 <CXA> 0D//
+RELAY_ON_EMPTY                    //24 30 30 42 4E 31 <CXA> 0D//
+RELAY_ON_ERROR                    //24 30 30 42 51 31 <CXA> 0D//
+RELAY_OFF_OK                      //24 30 30 42 41 30 <CXA> 0D//
+RELAY_OFF_NG                      //24 30 30 42 42 30 <CXA> 0D//
+RELAY_OFF_CHECK                   //24 30 30 42 4C 30 <CXA> 0D//
+RELAY_OFF_READY                   //24 30 30 42 4D 30 <CXA> 0D//
+RELAY_OFF_EMPTY                   //24 30 30 42 4E 30 <CXA> 0D//
+RELAY_OFF_ERROR                   //24 30 30 42 51 30 <CXA> 0D//
+RELAY_CLICK_OK                    //24 30 30 42 41 32 <CXA> 0D//
+RELAY_CLICK_NG                    //24 30 30 42 42 32 <CXA> 0D//
+RELAY_CLICK_CHECK                 //24 30 30 42 4C 32 <CXA> 0D//
+RELAY_CLICK_READY                 //24 30 30 42 4D 32 <CXA> 0D//
+RELAY_CLICK_EMPTY                 //24 30 30 42 4E 32 <CXA> 0D//
+RELAY_CLICK_ERROR                 //24 30 30 42 51 32 <CXA> 0D//
+LED_ON_GOOD                       //24 30 30 42 38 31 <CXA> 0D//
+LED_ON_NG                         //24 30 30 42 39 31 <CXA> 0D//
+LED_OFF_GOOD                      //24 30 30 42 38 30 <CXA> 0D//
+LED_OFF_NG                        //24 30 30 42 39 30 <CXA> 0D//
+LED_OFF_ALL                       //24 30 30 42 46 30 <CXA> 0D//
+LED_CLICK_GOOD                    //24 30 30 42 38 32 <CXA> 0D//
+LED_CLICK_NG                      //24 30 30 42 39 32 <CXA> 0D//
+LED_MUX_GOOD                      //24 30 30 42 46 31 <CXA> 0D//
+LED_MUX_NG                        //24 30 30 42 46 32 <CXA> 0D//
+LED_RUNNING                       //24 30 30 42 46 33 <CXA> 0D//
+#VCP_BENCH_EXTENDED_FOR_GEN11
+RELAY_MUX_SELECT_AUDIO            //24 30 30 57 4F 31 <CXA> 0D//
+RELAY_MUX_SELECT_MIC              //24 30 30 57 35 31 <CXA> 0D//
+RELAY_MUX_SELECT_SPK              //24 30 30 57 39 31 <CXA> 0D//
+#CCM_BENCH_BASIC
+VERSION                           //24 30 30 56 <CXA> 0D//
+RESET                             //24 30 30 5A <CXA> 0D//
+UART1_ENABLE                      //24 30 30 57 46 31 <CXA> 0D//
+UART1_DISABLE                     //24 30 30 57 46 30 <CXA> 0D//
+UART2_ENABLE                      //24 30 30 57 47 31 <CXA> 0D//
+UART2_DISABLE                     //24 30 30 57 47 30 <CXA> 0D//
+READ_CURRENT_VBAT1                //24 30 30 50 32 <CXA> 0D//
+READ_CURRENT_VBAT2                //24 30 30 50 33 <CXA> 0D//
+READ_ADC_VOLTAGE1                 //24 30 30 50 34 <CXA> 0D//
+READ_ADC_VOLTAGE2                 //24 30 30 50 35 <CXA> 0D//
+#MEDIA_COMMAND
+VBUS_ON                           //24 40 23 47 35 57 31 35 33 0D//
+VBUS_OFF                          //24 40 23 47 35 57 30 35 32 0D//
+MEDIA_VERSION                     //24 40 23 42 30 52 30 35 37 0D//
+MEDIA_SATUS                       //24 40 23 42 31 52 30 35 36 0D//
+MEDIA_SET_1G_MASTER               //24 40 23 42 32 57 30 35 30 0D//
+MEDIA_SET_1G_SLAVE                //24 40 23 42 32 57 31 35 31 0D//
+MEDIA_SET_100M_MASTER             //24 40 23 42 32 57 32 35 32 0D//
+MEDIA_SET_100M_SLAVE              //24 40 23 42 32 57 33 35 33 0D//
+MEDIA_EPHY_RESET                  //24 40 23 42 33 57 30 35 31 0D//
+MEDIA_QPHY_RESET                  //24 40 23 42 33 57 31 35 30 0D//
+MEDIA_CPU_RESET                   //24 40 23 42 33 57 32 35 33 0D//
+#CCM_BENCH_RELAY_CONTROL
+RELAY_VBAT1_ON                    //24 30 30 57 32 31 <CXA> 0D//
+RELAY_VBAT1_OFF                   //24 30 30 57 32 30 <CXA> 0D//
+RELAY_VBAT2_ON                    //24 30 30 57 43 31 <CXA> 0D//
+RELAY_VBAT2_OFF                   //24 30 30 57 43 30 <CXA> 0D//
+RELAY_TESTPORT_HIGH_3.3V          //24 30 30 57 41 31 <CXA> 0D//
+RELAY_TESTPORT_LOW_3.3V           //24 30 30 57 41 30 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_ALL_ON      //24 30 30 57 42 31 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_ALL_OFF     //24 30 30 57 42 30 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH1_ON      //24 30 30 57 4A 31 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH1_OFF     //24 30 30 57 4A 30 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH2_ON      //24 30 30 57 4B 31 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH2_OFF     //24 30 30 57 4B 30 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH3_ON      //24 30 30 57 4C 31 <CXA> 0D//
+RELAY_CCM_VOLTAGE_1.8_CH3_OFF     //24 30 30 57 4C 30 <CXA> 0D//
+RELAY_UART1_VOLTAGE_1.8           //24 30 30 57 48 31 <CXA> 0D//
+RELAY_UART1_VOLTAGE_3.3           //24 30 30 57 48 30 <CXA> 0D//
+RELAY_UART2_VOLTAGE_1.8           //24 30 30 57 49 31 <CXA> 0D//
+RELAY_UART2_VOLTAGE_3.3           //24 30 30 57 49 30 <CXA> 0D//
+RELAY_ACC_ON                      //24 30 30 42 43 31 <CXA> 0D//
+RELAY_ACC_OFF                     //24 30 30 42 43 30 <CXA> 0D//
+RELAY_ILL_ON                      //24 30 30 42 49 31 <CXA> 0D//
+RELAY_ILL_OFF                     //24 30 30 42 49 30 <CXA> 0D//
+RELAY_MANUAL_ON                   //24 30 30 42 4A 31 <CXA> 0D//
+RELAY_MANUAL_OFF                  //24 30 30 42 4A 30 <CXA> 0D//
+#CCM_BENCH_DTC_SPARE_CONTROL
+DTC_CCM_RF_OPEN                   //24 30 30 42 34 31 <CXA> 0D//
+DTC_CCM_RF_CLOSE                  //24 30 30 42 34 30 <CXA> 0D//
+DTC_CCM_GPS_OPEN                  //24 30 30 42 36 31 <CXA> 0D//
+DTC_CCM_GPS_CLOSE                 //24 30 30 42 36 30 <CXA> 0D//
+DTC_CAN_OPEN                      //24 30 30 42 4F 31 <CXA> 0D//
+DTC_CAN_CLOSE                     //24 30 30 42 4F 30 <CXA> 0D//
+RELAY_SPARE1_ON                   //24 30 30 57 4D 31 <CXA> 0D//
+RELAY_SPARE1_OFF                  //24 30 30 57 4D 30 <CXA> 0D//
+RELAY_SPARE1_CLICK                //24 30 30 57 4D 32 <CXA> 0D//
+RELAY_SPARE2_ON                   //24 30 30 57 4E 31 <CXA> 0D//
+RELAY_SPARE2_OFF                  //24 30 30 57 4E 30 <CXA> 0D//
+RELAY_SPARE2_CLICK                //24 30 30 57 4E 32 <CXA> 0D//
+RELAY_SPARE3_ON                   //24 30 30 57 47 31 <CXA> 0D//
+RELAY_SPARE3_OFF                  //24 30 30 57 47 30 <CXA> 0D//
+RELAY_SPARE3_CLICK                //24 30 30 57 47 32 <CXA> 0D//
+RELAY_SPARE4_ON                   //24 30 30 57 48 31 <CXA> 0D//
+RELAY_SPARE4_OFF                  //24 30 30 57 48 30 <CXA> 0D//
+RELAY_SPARE4_CLICK                //24 30 30 57 48 32 <CXA> 0D//
+#MCTM_BENCH_BASIC
+*VERSION                          //24 30 30 56 <CXA> 0D//
+*RESET                            //24 30 30 5A <CXA> 0D//
+*READ_INPUT                       //24 30 30 52 <CXA> 0D//
+*UART1_ENABLE                     //24 30 30 57 46 31 <CXA> 0D//
+*UART1_DISABLE                    //24 30 30 57 46 30 <CXA> 0D//
+*UART2_ENABLE                     //24 30 30 57 47 31 <CXA> 0D//
+*UART2_DISABLE                    //24 30 30 57 47 30 <CXA> 0D//
+*READ_CURRENT_VBAT1               //24 30 30 50 32 <CXA> 0D//
+*READ_CURRENT_VBAT2               //24 30 30 50 33 <CXA> 0D//
+*READ_KEYPAD_RED10V               //24 30 30 50 36 <CXA> 0D//
+*READ_KEYPAD_SIGNAL_FRONT         //24 30 30 50 37 <CXA> 0D//
+*READ_KEYPAD_SIGNAL_REAR          //24 30 30 50 42 <CXA> 0D//
+*READ_KEYPAD_OUT_VCP              //24 30 30 50 43 <CXA> 0D//
+*READ_BCM_TYPE                    //24 30 30 50 38 <CXA> 0D//
+*READ_TABLET1_5V                  //24 30 30 50 44 <CXA> 0D//
+*READ_TABLET2_5V                  //24 30 30 50 45 <CXA> 0D//
+*READ_TABLET3_5V                  //24 30 30 50 46 <CXA> 0D//
+*READ_GPS_OUT_PULSE               //24 30 30 50 47 <CXA> 0D//
+#MCTM_BENCH_RELAY_CONTROL
+*RELAY_ALL_OFF                    //24 30 30 57 30 30 <CXA> 0D//
+*RELAY_KEY_ON                     //24 30 30 57 31 31 <CXA> 0D//
+*RELAY_KEY_OFF                    //24 30 30 57 31 30 <CXA> 0D//
+*RELAY_VBAT1_ON                   //24 30 30 57 32 31 <CXA> 0D//
+*RELAY_VBAT1_OFF                  //24 30 30 57 32 30 <CXA> 0D//
+*RELAY_VBAT2_ON                   //24 30 30 57 33 31 <CXA> 0D//
+*RELAY_VBAT2_OFF                  //24 30 30 57 33 30 <CXA> 0D//
+*RELAY_DOOR_ON                    //24 30 30 57 34 31 <CXA> 0D//
+*RELAY_DOOR_OFF                   //24 30 30 57 34 30 <CXA> 0D//
+*RELAY_DOOR_CLICK                 //24 30 30 57 34 32 <CXA> 0D//
+*RELAY_LSGMLAN_OPEN               //24 30 30 57 36 31 <CXA> 0D//
+*RELAY_LSGMLAN_CLOSE              //24 30 30 57 36 30 <CXA> 0D//
+*RELAY_HSCOMM_OPEN                //24 30 30 57 37 31 <CXA> 0D//
+*RELAY_HSCOMM_CLOSE               //24 30 30 57 37 30 <CXA> 0D//
+*RELAY_BUB_ENABLE                 //24 30 30 57 38 31 <CXA> 0D//
+*RELAY_BUB_DISABLE                //24 30 30 57 38 30 <CXA> 0D//
+*RELAY_TESTPORT_HIGH              //24 30 30 57 41 31 <CXA> 0D//
+*RELAY_TESTPORT_LOW               //24 30 30 57 41 30 <CXA> 0D//
+*RELAY_UART2_VOLTAGE_1.8V         //24 30 30 57 49 31 <CXA> 0D//
+*RELAY_UART2_VOLTAGE_3.3V         //24 30 30 57 49 30 <CXA> 0D//
+*RELAY_SPARE1_ON                  //24 30 30 57 4D 31 <CXA> 0D//
+*RELAY_SPARE1_OFF                 //24 30 30 57 4D 30 <CXA> 0D//
+*RELAY_SPARE1_CLICK               //24 30 30 57 4D 32 <CXA> 0D//
+*RELAY_SPARE2_ON                  //24 30 30 57 4E 31 <CXA> 0D//
+*RELAY_SPARE2_OFF                 //24 30 30 57 4E 30 <CXA> 0D//
+*RELAY_SPARE2_CLICK               //24 30 30 57 4E 32 <CXA> 0D//
+*PULL_UP_UART1_ENABLE             //24 30 30 43 31 31 <CXA> 0D//
+*PULL_UP_UART1_DISABLE            //24 30 30 43 31 30 <CXA> 0D//
+*PULL_UP_UART2_ENABLE             //24 30 30 43 32 31 <CXA> 0D//
+*PULL_UP_UART2_DISABLE            //24 30 30 43 32 30 <CXA> 0D//
+*HSCAN_TERM_ON                    //24 30 30 43 38 31 <CXA> 0D//
+*HSCAN_TERM_OFF                   //24 30 30 43 38 30 <CXA> 0D//
+*RELAY_HSCAN_MUX_OPEN             //24 30 30 42 57 30 <CXA> 0D//
+*RELAY_HSCAN_MUX1_CANSIN          //24 30 30 42 57 31 <CXA> 0D//
+*RELAY_HSCAN_MUX2_CANSIN          //24 30 30 42 57 32 <CXA> 0D//
+*RELAY_HSCAN_MUX3_CANSIN          //24 30 30 42 57 33 <CXA> 0D//
+#MCTM_BENCH_MIC_AUDIO_CONTROL
+*RELAY_MIC_IN1_OPEN_EXT           //24 30 30 43 39 31 <CXA> 0D//
+*RELAY_MIC_IN1_CLOSE              //24 30 30 43 39 30 <CXA> 0D//
+*RELAY_MIC_IN1_CLOSE_INT          //24 30 30 43 39 33 <CXA> 0D//
+*RELAY_MIC_IN2_OPEN_EXT           //24 30 30 43 41 31 <CXA> 0D//
+*RELAY_MIC_IN2_CLOSE              //24 30 30 43 41 30 <CXA> 0D//
+*RELAY_MIC_IN2_CLOSE_INT          //24 30 30 43 41 33 <CXA> 0D//
+*RELAY_MIC_IN3_OPEN_EXT           //24 30 30 43 42 31 <CXA> 0D//
+*RELAY_MIC_IN3_CLOSE              //24 30 30 43 42 30 <CXA> 0D//
+*RELAY_MIC_IN3_CLOSE_INT          //24 30 30 43 42 33 <CXA> 0D//
+*RELAY_MIC_IN4_OPEN_EXT           //24 30 30 43 43 31 <CXA> 0D//
+*RELAY_MIC_IN4_CLOSE              //24 30 30 43 43 30 <CXA> 0D//
+*RELAY_MIC_IN4_CLOSE_INT          //24 30 30 43 43 33 <CXA> 0D//
+*RELAY_MIC_IN1_MUX_ON             //24 30 30 43 44 31 <CXA> 0D//
+*RELAY_MIC_IN1_MUX_OFF            //24 30 30 43 44 30 <CXA> 0D//
+*RELAY_MIC_IN2_MUX_ON             //24 30 30 43 45 31 <CXA> 0D//
+*RELAY_MIC_IN2_MUX_OFF            //24 30 30 43 45 30 <CXA> 0D//
+*RELAY_MIC_IN3_MUX_ON             //24 30 30 43 46 31 <CXA> 0D//
+*RELAY_MIC_IN3_MUX_OFF            //24 30 30 43 46 30 <CXA> 0D//
+*RELAY_MIC_IN4_MUX_ON             //24 30 30 43 47 31 <CXA> 0D//
+*RELAY_MIC_IN4_MUX_OFF            //24 30 30 43 47 30 <CXA> 0D//
+*RELAY_AUDIO_IN_MUX_ON            //24 30 30 43 48 31 <CXA> 0D//
+*RELAY_AUDIO_IN_MUX_OFF           //24 30 30 43 48 30 <CXA> 0D//
+*RELAY_AUDIO_IN_OPEN_EXT          //24 30 30 43 49 31 <CXA> 0D//
+*RELAY_AUDIO_IN_CLOSE_INT         //24 30 30 43 49 30 <CXA> 0D//
+*RELAY_MICOUT_MUX_AUDIO_OUT_ON    //24 30 30 43 55 31 <CXA> 0D//
+*RELAY_MICOUT_MUX_AUDIO_OUT_OFF   //24 30 30 43 55 30 <CXA> 0D//
+#MCTM_BENCH_DTC_SPARE_CONTROL
+*RELAY_DTC_RF1B_OPEN              //24 30 30 43 4A 31 <CXA> 0D//
+*RELAY_DTC_RF1B_CLOSE             //24 30 30 43 4A 30 <CXA> 0D//
+*RELAY_DTC_RF2A_OPEN              //24 30 30 43 4B 31 <CXA> 0D//
+*RELAY_DTC_RF2A_CLOSE             //24 30 30 43 4B 30 <CXA> 0D//
+*RELAY_DTC_RF2B_OPEN              //24 30 30 43 4C 31 <CXA> 0D//
+*RELAY_DTC_RF2B_CLOSE             //24 30 30 43 4C 30 <CXA> 0D//
+*RELAY_DTC_RF3A_OPEN              //24 30 30 43 4D 31 <CXA> 0D//
+*RELAY_DTC_RF3A_CLOSE             //24 30 30 43 4D 30 <CXA> 0D//
+*RELAY_DTC_RF3B_OPEN              //24 30 30 43 4E 31 <CXA> 0D//
+*RELAY_DTC_RF3B_CLOSE             //24 30 30 43 4E 30 <CXA> 0D//
+*RELAY_DTC_WIFI_A_OPEN            //24 30 30 43 4F 31 <CXA> 0D//
+*RELAY_DTC_WIFI_A_CLOSE           //24 30 30 43 4F 30 <CXA> 0D//
+*RELAY_DTC_WIFI_B_OPEN            //24 30 30 43 50 31 <CXA> 0D//
+*RELAY_DTC_WIFI_B_CLOSE           //24 30 30 43 50 30 <CXA> 0D//
+*RELAY_DTC_SPARE_1_OPEN           //24 30 30 43 51 31 <CXA> 0D//
+*RELAY_DTC_SPARE_1_CLOSE          //24 30 30 43 51 30 <CXA> 0D//
+*RELAY_DTC_SPARE_2_OPEN           //24 30 30 43 52 31 <CXA> 0D//
+*RELAY_DTC_SPARE_2_CLOSE          //24 30 30 43 52 30 <CXA> 0D//
+*RELAY_DTC_SPARE_3_OPEN           //24 30 30 43 53 31 <CXA> 0D//
+*RELAY_DTC_SPARE_3_CLOSE          //24 30 30 43 53 30 <CXA> 0D//
+*RELAY_DTC_RF1A_OPEN              //24 30 30 42 34 31 <CXA> 0D//
+*RELAY_DTC_RF1A_CLOSE             //24 30 30 42 34 30 <CXA> 0D//
+*RELAY_DTC_GPS_OPEN               //24 30 30 42 36 31 <CXA> 0D//
+*RELAY_DTC_GPS_CLOSE              //24 30 30 42 36 30 <CXA> 0D//
+*RELAY_DTC_HSCAN_OPEN             //24 30 30 42 4F 31 <CXA> 0D//
+*RELAY_DTC_HSCAN_CLOSE            //24 30 30 42 4F 30 <CXA> 0D//
+*RELAY_DTC_KEYPAD_OUT_VCP_OPEN    //24 30 30 43 54 31 <CXA> 0D//
+*RELAY_DTC_KEYPAD_OUT_VCP_CLOSE   //24 30 30 43 54 30 <CXA> 0D//
+#MCTM_BENCH_BUTTON_TABET_CONTROL
+*RELAY_KEYPAD_FRONT_EMR_ON        //24 30 30 42 31 31 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_EMR_OFF       //24 30 30 42 31 30 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_EMR_CLICK     //24 30 30 42 31 32 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_ONSTAR_ON     //24 30 30 42 32 31 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_ONSTAR_OFF    //24 30 30 42 32 30 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_ONSTAR_CLICK  //24 30 30 42 32 32 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_DOT_ON        //24 30 30 42 33 31 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_DOT_OFF       //24 30 30 42 33 30 <CXA> 0D//
+*RELAY_KEYPAD_FRONT_DOT_CLICK     //24 30 30 42 33 32 <CXA> 0D//
+*RELAY_KEYPAD_REAR_EMR_ON         //24 30 30 42 51 31 <CXA> 0D//
+*RELAY_KEYPAD_REAR_EMR_OFF        //24 30 30 42 51 30 <CXA> 0D//
+*RELAY_KEYPAD_REAR_EMR_CLICK      //24 30 30 42 51 32 <CXA> 0D//
+*RELAY_KEYPAD_REAR_ONSTAR_ON      //24 30 30 42 52 31 <CXA> 0D//
+*RELAY_KEYPAD_REAR_ONSTAR_OFF     //24 30 30 42 52 30 <CXA> 0D//
+*RELAY_KEYPAD_REAR_ONSTAR_CLICK   //24 30 30 42 52 32 <CXA> 0D//
+*RELAY_KEYPAD_REAR_DOT_ON         //24 30 30 42 53 31 <CXA> 0D//
+*RELAY_KEYPAD_REAR_DOT_OFF        //24 30 30 42 53 30 <CXA> 0D//
+*RELAY_KEYPAD_REAR_DOT_CLICK      //24 30 30 42 53 32 <CXA> 0D//
+*RELAY_5V_TABLET1_ON              //24 30 30 42 54 31 <CXA> 0D//
+*RELAY_5V_TABLET1_OFF             //24 30 30 42 54 30 <CXA> 0D//
+*RELAY_5V_TABLET2_ON              //24 30 30 42 55 31 <CXA> 0D//
+*RELAY_5V_TABLET2_OFF             //24 30 30 42 55 30 <CXA> 0D//
+*RELAY_5V_TABLET3_ON              //24 30 30 42 56 31 <CXA> 0D//
+*RELAY_5V_TABLET3_OFF             //24 30 30 42 56 30 <CXA> 0D//

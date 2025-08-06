@@ -1,0 +1,28 @@
+#TCP DCT TABLE
+0  //90 1D  //31  //ECU Hardware Performance - General Checksum Failure
+1  //90 1D  //32  //ECU Hardware Performance - General Memory Failure
+2  //90 1D  //37  //ECU Hardware Performance - Watchdog/Safety uC failure
+3  //90 1D  //38  //ECU Hardware Performance - Supervision Software Failure
+4  //90 1D  //3C  //ECU Hardware Performance - Internal Communications Failure (Loss of communication with GPS)
+5  //90 1D  //F0  //ECU Hardware Performance - Internal Communications Failure (Loss of communication with NAD)
+6  //90 1D  //F3  //ECU Hardware Performance - Internal Communications Failure (Loss of communication with SIM)
+7  //90 1E  //46  //ECU Software Performance - Vehicle Configuration Not Programmed (Configuration Flag) 
+8  //94 46  //03  //Replace Backup Power Source - Voltage Below Threshold
+9  //94 47  //04  //Backup Power Source - Open Circuit
+10 //A4 55  //02  //Cellular Phone Microphone Circuit - Short to Ground
+11 //A4 55  //04  //Cellular Phone Microphone Circuit - Open
+12 //A4 62  //04  //GPS Antenna Malfunction Low (Open)
+13 //A4 62  //02  //GPS Antenna Malfunction Low (Short to Ground)
+14 //A4 70  //02  //Cellular Phone Antenna Circuit - Short to Ground
+15 //A4 70  //04  //Cellular Phone Antenna Circuit - Open
+16 //A4 76  //02  //Cellular Phone Select Service Switch - Short to Ground
+17 //A4 76  //04  //Cellular Phone Select Service Switch - Open Circuit
+18 //A4 76  //59  //Cellular Phone Select Service Switch - Component Protection Time-out
+19 //C0 78  //00  //Control Module Communication Bus Off on LSGMlan
+20 //C1 40  //00  //Lost Communication with Body Control Module - No Additional Information
+21 //C1 51  //00  //Lost Communication With Restraints Control Module - No Additional Information
+22 //C1 55  //00  //Lost Communication With Instrument Panel Cluster Control Module - No Additional Information
+23 //C1 84  //00  //Lost Communication With Radio - No Additional Information
+24 //D8 B4  //00  //Lost Communication with CSM on Ethernet Bus
+25 //D8 B5  //00  //Lost Communication with CSM
+26 //C0 73  //00  //Control Module Communication Bus OFF on HSGMlan - No Additional Information

@@ -1,0 +1,32 @@
+#GEN11 TCP/VCP DTC TABLE
+0  //90 1D //31  //General Checksum Failure
+1  //90 1D //32  //General Memory Failure
+2  //90 1D //37  //Watchdog/Safety uC failure
+3  //90 1D //39  //Internal Electric Failure
+4  //90 1E //46  //Vehicle Configuration Not Programmed - Configuration Flag
+5  //94 46 //03  //Replace Backup Power Source - Voltage Below Threshold
+6  //94 47 //04  //Backup Power Source - Open Circuit
+7  //94 47 //07  //Backup Power Source - Over Charging
+8  //94 47 //54  //Backup Power Source - Too high temperature
+9  //A4 55 //02  //Cellular Phone Microphone Circuit - Short to Ground
+10 //A4 55 //04  //Cellular Phone Microphone Circuit - Open
+11 //A4 62 //01  //Coaxial Antenna Cell/GPS combined Signal - Short to positive voltage
+12 //A4 62 //02  //Coaxial Antenna Cell/GPS combined Signal - Short to Ground
+13 //A4 62 //04  //Coaxial Antenna Cell/GPS combined Signal - Open
+14 //A4 70 //01  //Cell phone antenna circuit - Short to Positive voltage
+15 //A4 70 //02  //Cell phone antenna circuit - Short to Ground
+16 //A4 70 //04  //Cell phone antenna circuit - Open
+17 //A4 76 //02  //Cellular Phone Select Service Switch - Short to Ground Circuit
+18 //A4 76 //04  //Cellular Phone Select Service Switch - Open Circuit
+19 //A4 76 //59  //Cellular Phone Select Service Switch - Component Protection Time-out
+20 //A4 5C //02  //Speaker short to ground (EU_Only)
+21 //A4 5C //04  //Speaker open (EU_Only)
+22 //C0 73 //00  //Control Module Communication Bus Off on HSGMlan - No additional information
+23 //C0 78 //00  //Control Module Communication Bus Off on LSGMlan
+24 //C1 40 //00  //Lost Communication with Body Control Module - No additional information
+25 //C1 51 //00  //Lost Communication With Restraints Control Module- No additional information
+26 //C1 55 //00  //Lost Communication With Instrument Panel Cluster Control Module- No additional information
+27 //C1 84 //00  //Lost Communication With Radio
+28 //D8 B4 //00  //Loss of communication with CSM on Ethernet
+29 //D8 B4 //71  //Loss of communication with CSM on AVB
+30 //D8 04 //00	 //Loss of communication with ISRVM(VCP only)

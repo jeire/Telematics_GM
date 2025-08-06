@@ -1,0 +1,18 @@
+#BASIC
+VERSION                         //24 30 30 56 <CXA> 0D//
+RESET                           //24 30 30 5A <CXA> 0D//
+READ_INPUT                      //24 30 30 52 <CXA> 0D//
+#SELECTOR
+ALL_OFF                         //24 30 30 57 30 30 <CXA> 0D//
+GOLDEN_NODE_ON                  //24 30 30 57 31 31 <CXA> 0D//
+GOLDEN_NODE_OFF                 //24 30 30 57 31 30 <CXA> 0D//
+SET_GOLDEN_NODE_ON              //24 30 30 57 32 31 <CXA> 0D//
+SET_GOLDEN_NODE_OFF             //24 30 30 57 32 30 <CXA> 0D//
+5515C_GOLDEN_NODE_ON            //24 30 30 57 33 31 <CXA> 0D//
+5515C_GOLDEN_NODE_OFF           //24 30 30 57 33 30 <CXA> 0D//
+SPARE1_ON                       //24 30 30 57 34 31 <CXA> 0D//
+SPARE1_OFF                      //24 30 30 57 34 30 <CXA> 0D//
+SPARE1_CLICK                    //24 30 30 57 34 32 <CXA> 0D//
+SPARE2_ON                       //24 30 30 57 35 31 <CXA> 0D//
+SPARE2_OFF                      //24 30 30 57 35 30 <CXA> 0D//
+SPARE2_CLICK                    //24 30 30 57 35 32 <CXA> 0D//

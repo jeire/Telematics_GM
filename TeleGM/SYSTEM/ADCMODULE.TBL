@@ -1,0 +1,15 @@
+#BASIC
+VERSION                         //24 30 30 56 <CXA> 0D//
+RESET                           //24 30 30 5A <CXA> 0D//
+#RELAY_MUX
+ALL_OFF                         //24 30 30 4D 30 <CXA> 0D//
+RELAY1_SELECT                   //24 30 30 4D 31 <CXA> 0D//
+RELAY2_SELECT                   //24 30 30 4D 32 <CXA> 0D//
+RELAY3_SELECT                   //24 30 30 4D 33 <CXA> 0D//
+RELAY4_SELECT                   //24 30 30 4D 34 <CXA> 0D//
+#READ_ADC_VOLTAGE
+READ_ADC                        //24 30 30 41 30 <CXA> 0D//
+READ_ADC_CH1                    //24 30 30 41 31 <CXA> 0D//
+READ_ADC_CH2                    //24 30 30 41 32 <CXA> 0D//
+READ_ADC_CH3                    //24 30 30 41 33 <CXA> 0D//
+READ_ADC_CH4                    //24 30 30 41 34 <CXA> 0D//

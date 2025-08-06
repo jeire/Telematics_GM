@@ -1,0 +1,107 @@
+#GEN12_BASIC
+START_TOOL                                      //4B 55 00 00 <LENGTH> 01 00 01 00 00 00 01 00 01 <CRC16> FE//////
+WRITE_WIPID                                     //4B 55 00 00 <LENGTH> 01 00 41 02 02 00 0F 00 <DATA:CHAR> <CRC16> 7E//////
+READ_WIPID                                      //4B 55 00 00 <LENGTH> 01 00 41 02 01 00 00 00 <CRC16> 7E//CHAR////BODY
+WRITE_SERIAL                                    //4B 55 00 00 <LENGTH> 01 00 41 10 02 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//////
+READ_SERIAL                                     //4B 55 00 00 <LENGTH> 01 00 41 10 01 00 00 00 <CRC16> 7E//CHAR////BODY
+WRITE_PID                                       //4B 55 00 00 <LENGTH> 01 00 41 01 02 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//////
+READ_PID                                        //4B 55 00 00 <LENGTH> 01 00 41 01 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_FID                                        //4B 55 00 00 <LENGTH> 01 00 41 03 01 00 00 00 <CRC16> 7E//CHAR////BODY
+STOP_FIREWALL                                   //4B 55 00 00 <LENGTH> 01 00 D3 01 01 00 00 00 7D <CRC16> 7E//////
+GET_SYSTEM_MODE	                         		//4B 55 00 00 <LENGTH> 01 00 40 02 01 00 00 00 00 <CRC16> 7E//CHAR////BODY
+SET_SYSTEM_MODE_NORMAL		                    //4B 55 00 00 <LENGTH> 01 00 40 02 02 00 01 00 01 <CRC16> 7E//////
+SET_SYSTEM_MODE_FACTORY		                    //4B 55 00 00 <LENGTH> 01 00 40 02 02 00 01 00 00 <CRC16> 7E//////
+#GEN12_VERSION
+READ_VERSION_SW_NAD                             //4B 55 00 00 <LENGTH> 01 00 01 01 01 00 01 00 01 <CRC16> 7E//CHAR////HEAD
+READ_VERSION_SW_MICOM                           //4B 55 00 00 <LENGTH> 01 00 01 01 01 00 01 00 02 <CRC16> 7E//CHAR////HEAD
+READ_VERSION_SW_AP                              //4B 55 00 00 <LENGTH> 01 00 01 01 01 00 01 00 04 <CRC16> 7E//CHAR////HEAD
+READ_REGION_CODE                                //4B 55 00 00 <LENGTH> 01 00 01 04 00 00 01 00 01 <CRC16> 7E//CHAR////BODY
+#GEN12_POWER_BUB
+SET_POWER_MODE_SLEEP                            //4B 55 00 00 <LENGTH> 01 00 18 00 02 00 00 00 <CRC16> 7E//////
+SET_POWER_MODE_OFF							    //4B 55 00 00 <LENGTH> 01 00 18 00 05 00 00 00 <CRC16> 7E//////
+SET_POWER_MODE_OEM                              //4B 55 00 00 <LENGTH> 01 00 18 00 03 00 00 00 <CRC16> 7E//////
+SET_POWER_MODE_BUBTEST                          //4B 55 00 00 <LENGTH> 01 00 18 00 04 00 00 00 00 00 <CRC16> 7E//////
+SET_POWER_MODE_BUBTEST_LIMIT                    //4B 55 00 00 <LENGTH> 01 00 18 00 04 00 02 00 3C 00 <CRC16> 7E//////
+GET_POWER_MODE                                  //4B 55 00 00 <LENGTH> 01 00 18 00 01 00 00 00 <CRC16> 7E//CHAR////BODY
+GET_BUB_TEMPERATURE                             //4B 55 00 00 <LENGTH> 01 00 18 07 01 00 00 00 <CRC16> 7E//SINGLE////BODY
+SET_BUB_MODE_ENABLE                             //4B 55 00 00 <LENGTH> 01 00 18 01 02 00 01 00 01 <CRC16> 7E//////
+SET_BUB_MODE_DISABLE                            //4B 55 00 00 <LENGTH> 01 00 18 01 02 00 01 00 00 <CRC16> 7E//////
+GET_BUB_MODE                                    //4B 55 00 00 <LENGTH> 01 00 18 01 01 00 00 00 <CRC16> 7E//BYTE////BODY
+REQUEST_BUB_RI                                  //4B 55 00 00 <LENGTH> 01 00 18 02 02 00 00 00 <CRC16> 7E//////BODY
+GET_BUB_RI                                      //4B 55 00 00 <LENGTH> 01 00 18 02 01 00 00 00 <CRC16> 7E//UINT16////BODY
+SET_BUB_CHARGING_ON                             //4B 55 00 00 <LENGTH> 01 00 18 04 02 00 01 00 01 <CRC16> 7E//////
+SET_BUB_CHARGING_OFF                            //4B 55 00 00 <LENGTH> 01 00 18 04 02 00 01 00 00 <CRC16> 7E//////
+GET_BUB_CHARGING_STATUS                         //4B 55 00 00 <LENGTH> 01 00 18 04 01 00 00 00 <CRC16> 7E//BYTE////BODY
+SET_BUB_CALIBRATION                             //4B 55 00 00 <LENGTH> 01 00 18 13 02 00 02 00 <DATA:INT16> <CRC16> 7E//UINT16////BODY
+GET_BUB_CALIBRATION                             //4B 55 00 00 <LENGTH> 01 00 18 13 01 00 00 00 <CRC16> 7E//SINGLE////BODY
+SAVE_BUB_CALIBRATION                            //4B 55 00 00 <LENGTH> 01 00 18 13 03 00 00 00 <CRC16> 7E//////
+GET_BUB_OCV                                     //4B 55 00 00 <LENGTH> 01 00 18 03 01 00 00 00 <CRC16> 7E//UINT16////BODY
+GET_BUB_MODEL                                   //4B 55 00 00 <LENGTH> 01 00 18 14 01 00 00 00 <CRC16> 7E//INT////BODY
+#GEN12_AUDIO
+SET_AUDIO_LOOPBACK_START                        //4B 55 00 00 <LENGTH> 01 00 1A 02 03 00 01 00 01 <CRC16> 7E//////
+SET_AUDIO_LOOPBACK_STOP                         //4B 55 00 00 <LENGTH> 01 00 1A 02 03 00 01 00 00 <CRC16> 7E//////
+SET_EAVB_START                    	            //4B 55 00 00 <LENGTH> 01 00 1A 02 02 00 01 00 01 <CRC16> 7E//////
+SET_EAVB_STOP                        	        //4B 55 00 00 <LENGTH> 01 00 1A 02 02 00 01 00 00 <CRC16> 7E//////
+#FGEN12_GNSS
+GPS_COLD_START                                  //4B 55 00 00 <LENGTH> 01 00 21 01 00 00 01 00 01 <CRC16> 7E//////
+GPS_WARM_START                                  //4B 55 00 00 <LENGTH> 01 00 21 01 00 00 01 00 02 <CRC16> 7E//////
+GPS_HOT_START                                   //4B 55 00 00 <LENGTH> 01 00 21 01 00 00 01 00 03 <CRC16> 7E//////
+READ_TTFF                                       //4B 55 00 00 <LENGTH> 01 00 21 03 01 00 00 00 <CRC16> 7E//TTFF////BODY
+READ_SVCOUNT                                    //4B 55 00 00 <LENGTH> 01 00 21 04 01 00 00 00 <CRC16> 7E//UINT16////BODY
+READ_CN0_GPS                                    //4B 55 00 00 <LENGTH> 01 00 21 05 01 00 01 00 00 <CRC16> 7E//SINGLE////BODY
+READ_CN0_GNSS                                   //4B 55 00 00 <LENGTH> 01 00 21 05 01 00 01 00 01 <CRC16> 7E//SINGLE////BODY
+GET_TTFF_STATUS                                 //4B 55 00 00 <LENGTH> 01 00 80 FF 61 00 00 00 <CRC16> 7E//BYTE////BODY
+READ_L2_CN0_GPS                                 //4B 55 00 00 <LENGTH> 01 00 21 06 01 00 01 00 00 <CRC16> 7E//SINGLE////BODY
+READ_L2_CN0_GNSS                                //4B 55 00 00 <LENGTH> 01 00 21 06 01 00 01 00 01 <CRC16> 7E//SINGLE////BODY
+READ_L5_CN0_GPS                                 //4B 55 00 00 <LENGTH> 01 00 21 07 01 00 01 00 00 <CRC16> 7E//SINGLE////BODY
+READ_L5_CN0_GNSS                                //4B 55 00 00 <LENGTH> 01 00 21 08 01 00 14 00 <DATA:CHAR> <CRC16> 7E//SINGLE////BODY
+GPS_DISTANCE 			                        //4B 55 00 00 <LENGTH> 01 00 21 08 01 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//SINGLE////BODY
+#GEN12_BUTTON_AND_LED
+SET_BUTTON_NOT_PRESS                            //4B 55 00 00 <LENGTH> 01 00 10 03 02 00 01 00 00 <CRC16> 7E//BYTE////
+SET_BUTTON_PRESS                                //4B 55 00 00 <LENGTH> 01 00 10 03 02 00 01 00 01 <CRC16> 7E//BYTE////
+GET_BUTTON_STATUS                               //4B 55 00 00 <LENGTH> 01 00 10 03 01 00 00 00 <CRC16> 7E//CHAR////BODY
+SET_LED_GREEN_ON_RED_OFF                        //4B 55 00 00 <LENGTH> 01 00 10 01 03 00 01 00 00 <CRC16> 7E//////
+SET_LED_RED_ON_GREEN_OFF                        //4B 55 00 00 <LENGTH> 01 00 10 01 03 00 01 00 01 <CRC16> 7E//////
+SET_LED_OFF                                     //4B 55 00 00 <LENGTH> 01 00 10 01 03 00 01 00 02 <CRC16> 7E//////
+SET_LED_DEFAULT									//4B 55 00 00 <LENGTH> 01 00 10 01 03 00 01 00 03 <CRC16> 7E//////
+#GEN12_SIM
+WRITE_IMEI                                      //4B 55 00 00 <LENGTH> 01 00 34 00 02 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//////
+READ_IMEI                                       //4B 55 00 00 <LENGTH> 01 00 34 00 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_IMEI_CHECKSUM                              //4B 55 00 00 <LENGTH> 01 00 34 00 01 00 00 00 <CRC16> 7E//IMEICHKSUM////BODY
+READ_IMSI                                       //4B 55 00 00 <LENGTH> 01 00 34 02 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_ICCID                                      //4B 55 00 00 <LENGTH> 01 00 34 03 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_EUICCID                                 	//4B 55 00 00 <LENGTH> 01 00 34 04 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_MSISDN                                     //4B 55 00 00 <LENGTH> 01 00 34 05 01 00 00 00 <CRC16> 7E//CHAR////BODY
+READ_SIM_QUALCOM_VER                            //4B 55 00 00 <LENGTH> 01 00 34 15 01 00 00 00 <CRC16> 7E//BYTE////BODY  
+READ_SIM_PROFILE_VER                            //4B 55 00 00 <LENGTH> 01 00 34 10 01 00 00 00 <CRC16> 7E//BYTE////BODY
+READ_SKU_ID                                     //4B 55 00 00 <LENGTH> 01 00 34 12 01 00 00 00 <CRC16> 7E//BYTE////BODY  
+READ_SIM_VENDOR                                 //4B 55 00 00 <LENGTH> 01 00 34 13 01 00 00 00 <CRC16> 7E//BYTE////BODY  
+READ_SIM_VVN                                    //4B 55 00 00 <LENGTH> 01 00 34 14 01 00 00 00 <CRC16> 7E//BYTE////BODY  
+READ_SIM_STATUS                                 //4B 55 00 00 <LENGTH> 01 00 34 20 01 00 00 00 <CRC16> 7E//BYTE////BODY
+#GEN12_NAD
+EFS_BACKUP                                      //4B 55 00 00 <LENGTH> 01 00 12 05 00 00 00 00 <CRC16> 7E//////
+EFS_BACKUP_VALID                                //4B 55 00 00 <LENGTH> 01 00 12 05 01 00 00 00 <CRC16> 7E//////
+SET_NAD_USB_SPEED_FULL                          //4B 55 00 00 <LENGTH> 01 00 12 06 02 00 01 00 00 <CRC16> 7E//////
+SET_NAD_USB_SPEED_HIGH                          //4B 55 00 00 <LENGTH> 01 00 12 06 02 00 01 00 01 <CRC16> 7E//////
+GET_NAD_USB_SPEED                               //4B 55 00 00 <LENGTH> 01 00 12 06 01 00 00 00 <CRC16> 7E//CHAR////BODY
+SET_NAD_CONNECT_TO_USB			                //4B 55 00 00 <LENGTH> 01 00 D3 05 01 00 04 00 00 <CRC16> 7E//////
+SET_NAD_CONNECT_TO_ETHERNET		                //4B 55 00 00 <LENGTH> 01 00 D3 05 01 00 04 00 01 <CRC16> 7E//////
+#FUNCTION_DTC
+CLEAR_ALL_DTC                                   //4B 55 00 00 <LENGTH> 01 00 1B 07 00 00 00 00 <CRC16> 7E//////
+GET_DTC_RF_STATUS                               //4B 55 00 00 <LENGTH> 01 00 1B 06 02 00 00 00 <CRC16> 7E//DTC////BODY
+GET_DTC_GPS_STATUS                              //4B 55 00 00 <LENGTH> 01 00 1B 06 03 00 00 00 <CRC16> 7E//DTC////BODY
+GET_DTC_MIC_STATUS                              //4B 55 00 00 <LENGTH> 01 00 1B 06 04 00 00 00 <CRC16> 7E//DTC////BODY
+ENABLE_DTC                                      //4B 55 00 00 <LENGTH> 01 00 1B 06 06 00 00 00 <CRC16> 7E//////
+DISABLE_DTC                                     //4B 55 00 00 <LENGTH> 01 00 1B 06 05 00 00 00 <CRC16> 7E//////
+GET_DTC_BY_CODE                                 //4B 55 00 00 <LENGTH> 01 00 1B 06 07 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//CHAR////BODY
+GET_DTC_BY_NAME                                 //4B 55 00 00 <LENGTH> 01 00 1B 06 08 00 <SIZE:DATA> <DATA:CHAR> <CRC16> 7E//CHAR////BODY
+DTC_ALL_READ                                    //4B 55 00 00 <LENGTH> 01 00 1B 07 01 00 00 00 <CRC16> 7E//CHAR////BODY
+#GEN12_SECURE_STORAGE                           
+STORE_DATA_ROOT                                 //4B 55 00 00 <LENGTH> 01 00 D4 00 00 00 <SIZE:DATA> <DATA:BYTE> <CRC16> 7E//CHAR////BODY
+STORE_DATA_VEHICLE_CRT                          //4B 55 00 00 <LENGTH> 01 00 D4 00 01 00 <SIZE:DATA> <DATA:BYTE> <CRC16> 7E//CHAR////BODY
+STORE_DATA_VEHICLE_PRI                          //4B 55 00 00 <LENGTH> 01 00 D4 00 02 00 <SIZE:DATA> <DATA:BYTE> <CRC16> 7E//CHAR////BODY
+STORE_DATA_VEHICLE_AUTH                         //4B 55 00 00 <LENGTH> 01 00 D4 00 03 00 <SIZE:DATA> <DATA:BYTE> <CRC16> 7E//CHAR////BODY
+STORE_DATA_CALLCENT_CRT                         //4B 55 00 00 <LENGTH> 01 00 D4 00 04 00 <SIZE:DATA> <DATA:BYTE> <CRC16> 7E//CHAR////BODY
+
+		
+

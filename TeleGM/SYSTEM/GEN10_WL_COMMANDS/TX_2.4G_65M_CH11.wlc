@@ -1,0 +1,8 @@
+wl down
+wl mpc 0
+wl band b
+wl country ALL
+wl up
+wl nrate -m 7
+wl channel 11
+wl pkteng_start 00:90:4c:c5:34:23 tx 100 1024 0
