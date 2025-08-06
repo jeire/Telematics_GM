@@ -113,11 +113,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DK_LIB\DK_ACTOR.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_ATT.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_CCM.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_DIO_ADC.cs" />
+    <Compile Include="DK_LIB\DK_ANALYZER_DIO_AUDIO.cs" />
+    <Compile Include="DK_LIB\DK_ANALYZER_DIO_VCP.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_GEN10.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_GEN11.cs" />
+    <Compile Include="DK_LIB\DK_ANALYZER_GEN11P.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_GEN9DLL.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_MCTM.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_ODAPOWER.cs" />
@@ -131,7 +135,6 @@
     <Compile Include="DK_LIB\DK_ANALYZER_TCP.cs" />
     <Compile Include="DK_LIB\DK_CHECKSUM.cs" />
     <Compile Include="DK_LIB\DK_DECISION.cs" />
-    <Compile Include="DK_LIB\DK_ACTOR.cs" />
     <Compile Include="DK_LIB\DK_COMM.cs" />
     <Compile Include="DK_LIB\DK_EXPR.cs" />
     <Compile Include="DK_LIB\DK_GMES.cs" />
@@ -149,10 +152,7 @@
     <Compile Include="DK_LIB\DK_SOCKET.cs" />
     <Compile Include="DK_LIB\DK_STEPMANAGER.cs" />
     <Compile Include="DK_LIB\DK_PAGE.cs" />
-    <Compile Include="DK_LIB\DK_ANALYZER_DIO_VCP.cs" />
-    <Compile Include="DK_LIB\DK_ANALYZER_DIO_AUDIO.cs" />
     <Compile Include="DK_LIB\DK_VECTOR_BASIC.cs" />
-    <Compile Include="DK_LIB\DK_ANALYZER_GEN11P.cs" />
     <Compile Include="DK_LIB\DK_CLOSEDXML.cs" />
     <Compile Include="DK_LIB\DK_ANALYZER_NAD.cs" />
     <Compile Include="DK_LIB\DK_DOCUMENT.cs" />
@@ -162,98 +162,96 @@
     <Compile Include="DK_LIB\DK_MELSEC_ETHERNET.cs" />
     <Compile Include="DK_LIB\KM_ANALYZER_SET.cs" />
     <Compile Include="EX_LIB\PCANBasic.cs" />
-    <Compile Include="FrmFaMain.cs">
+    <Compile Include="FORM\FrmConfig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFaMain.Designer.cs">
-      <DependentUpon>FrmFaMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmJobMapping.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmJobMapping.Designer.cs">
-      <DependentUpon>FrmJobMapping.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPasswordManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPasswordManage.Designer.cs">
-      <DependentUpon>FrmPasswordManage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMsgPop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMsgPop.Designer.cs">
-      <DependentUpon>FrmMsgPop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPassWord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPassWord.Designer.cs">
-      <DependentUpon>FrmPassWord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmTest.Designer.cs">
-      <DependentUpon>FrmTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConfig.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConfig.Designer.cs">
+    <Compile Include="FORM\FrmConfig.Designer.cs">
       <DependentUpon>FrmConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFileName.cs">
+    <Compile Include="FORM\FrmEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFileName.Designer.cs">
-      <DependentUpon>FrmFileName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEdit.Designer.cs">
+    <Compile Include="FORM\FrmEdit.Designer.cs">
       <DependentUpon>FrmEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdater.cs">
+    <Compile Include="FORM\FrmFaMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdater.Designer.cs">
+    <Compile Include="FORM\FrmFaMain.Designer.cs">
+      <DependentUpon>FrmFaMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmFileName.Designer.cs">
+      <DependentUpon>FrmFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmJobMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmJobMapping.Designer.cs">
+      <DependentUpon>FrmJobMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmMsgPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmMsgPop.Designer.cs">
+      <DependentUpon>FrmMsgPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmPassWord.Designer.cs">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmPasswordManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmPasswordManage.Designer.cs">
+      <DependentUpon>FrmPasswordManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FrmUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FrmUpdater.Designer.cs">
       <DependentUpon>FrmUpdater.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmFaMain.resx">
-      <DependentUpon>FrmFaMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmJobMapping.resx">
-      <DependentUpon>FrmJobMapping.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPasswordManage.resx">
-      <DependentUpon>FrmPasswordManage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMsgPop.resx">
-      <DependentUpon>FrmMsgPop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPassWord.resx">
-      <DependentUpon>FrmPassWord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmTest.resx">
-      <DependentUpon>FrmTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmConfig.resx">
+    <EmbeddedResource Include="FORM\FrmConfig.resx">
       <DependentUpon>FrmConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFileName.resx">
-      <DependentUpon>FrmFileName.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEdit.resx">
+    <EmbeddedResource Include="FORM\FrmEdit.resx">
       <DependentUpon>FrmEdit.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdater.resx">
+    <EmbeddedResource Include="FORM\FrmFaMain.resx">
+      <DependentUpon>FrmFaMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmFileName.resx">
+      <DependentUpon>FrmFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmJobMapping.resx">
+      <DependentUpon>FrmJobMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmMsgPop.resx">
+      <DependentUpon>FrmMsgPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmPassWord.resx">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmPasswordManage.resx">
+      <DependentUpon>FrmPasswordManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FrmUpdater.resx">
       <DependentUpon>FrmUpdater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
